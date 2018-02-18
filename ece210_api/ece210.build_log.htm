@@ -1,0 +1,112 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.21.1.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Joe Krachey, UW-Madison, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.21a
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 3 (build 300)
+Assembler:       Armasm.exe V5.06 update 3 (build 300)
+Linker/Locator:  ArmLink.exe V5.06 update 3 (build 300)
+Library Manager: ArmAr.exe V5.06 update 3 (build 300)
+Hex Converter:   FromElf.exe V5.06 update 3 (build 300)
+CPU DLL:         SARMCM3.DLL V5.21a
+Dialog DLL:      DCM.DLL V1.13.8.0
+Target DLL:      UL2CM3.DLL V1.158.5.0
+Dialog DLL:      TCM.DLL V1.14.14.0
+ 
+<h2>Project:</h2>
+C:\Users\joe.krachey\Documents\ece353-src\staff-v2.0\ECE210-Lib\ECE210-Lib.uvprojx
+Project File Date:  10/07/2016
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 3 (build 300)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'ECE210-Lib'
+compiling pc_buffer.c...
+compiling ece353_images.c...
+compiling interrupts.c...
+compiling i2c.c...
+compiling spi.c...
+compiling gpio_port.c...
+..\drivers\c\gpio_port.c(82): warning:  #188-D: enumerated type mixed with another type
+         return 0;
+..\drivers\c\gpio_port.c: 1 warning, 0 errors
+compiling buzzer.c...
+..\peripherals\c\buzzer.c(110): warning:  #550-D: variable "status" was set but never used
+    i2c_status_t status;
+..\peripherals\c\buzzer.c: 1 warning, 0 errors
+compiling uart.c...
+..\drivers\c\uart.c(184): warning:  #188-D: enumerated type mixed with another type
+         return 0;
+..\drivers\c\uart.c: 1 warning, 0 errors
+compiling ws2812b.c...
+compiling adc.c...
+compiling gptimer.c...
+compiling timers.c...
+compiling eeprom.c...
+compiling ft6x06.c...
+compiling lcd_images.c...
+compiling io_expander.c...
+compiling lcd_buttons.c...
+compiling lcd_fonts.c...
+compiling lcd.c...
+assembling ws2812b.s...
+compiling microphone.c...
+compiling mcp47fvbxx.c...
+compiling ps2.c...
+compiling lcd_terminal.c...
+compiling spi_select.c...
+compiling serial_debug.c...
+..\peripherals\c\serial_debug.c(114): warning:  #177-D: variable "uart_base" was declared but never referenced
+     uint32_t uart_base;
+..\peripherals\c\serial_debug.c(115): warning:  #177-D: variable "tx_buffer" was declared but never referenced
+     PC_Buffer *tx_buffer;
+..\peripherals\c\serial_debug.c: 2 warnings, 0 errors
+compiling wireless.c...
+compiling ece210_api.c...
+..\peripherals\c\ece210_api.c(83): warning:  #177-D: variable "return_val" was declared but never referenced
+    uint8_t return_val = 0;
+..\peripherals\c\ece210_api.c(116): warning:  #550-D: variable "data" was set but never used
+    uint8_t data; 
+..\peripherals\c\ece210_api.c(150): warning:  #188-D: enumerated type mixed with another type
+    terminal_add_msg(msg,alignment,color);
+..\peripherals\c\ece210_api.c: 3 warnings, 0 errors
+creating Library...
+"..\ece210_api\ece210.lib" - 0 Error(s), 8 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
+                Keil::Device:Startup:1.0.1
+                Texas Instruments Tiva C Series Device Support and Examples
+   * Component: Startup Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\joe.krachey\Documents\ece353-src\staff-v2.0\ECE210-Lib\RTE
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+
+   * Component: Keil::Device:Startup:1.0.1
+      Source file:   Device\Source\system_TM4C123.c
+      Include file:  Device\Include\TM4C123\TM4C123.h
+      Source file:   Device\Source\ARM\startup_TM4C123.s
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
